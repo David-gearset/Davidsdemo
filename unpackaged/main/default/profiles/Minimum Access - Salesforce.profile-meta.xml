@@ -24,6 +24,11 @@
     </userPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Onboarding__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Qualified_for_Onboarding__c</field>
         <readable>true</readable>
     </fieldPermissions>
