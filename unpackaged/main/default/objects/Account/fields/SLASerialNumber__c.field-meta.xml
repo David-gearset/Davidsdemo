@@ -4,7 +4,7 @@
     <description>Capture the 5 digit long serial number for the user&#39;s SLA</description>
     <externalId>false</externalId>
     <label>SLA Serial Number</label>
-    <length>5</length>
+    <length>7</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Text</type>
