@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
+    <userLicense>External Apps Login</userLicense>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountNumber</field>
@@ -186,7 +187,6 @@
         <field>Account.YearStarted</field>
         <readable>true</readable>
     </fieldPermissions>
-    <userLicense>External Apps Login</userLicense>
     <userPermissions>
         <enabled>true</enabled>
         <name>EnableNotifications</name>
@@ -195,4 +195,20 @@
         <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
     </userPermissions>
+    <tabVisibilities>
+        <tab>standard-AsyncOperationLog</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormConsent</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormDataUse</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormText</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
 </Profile>
