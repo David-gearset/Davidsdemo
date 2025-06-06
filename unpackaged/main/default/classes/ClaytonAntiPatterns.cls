@@ -3,7 +3,7 @@
  * to demonstrate Clayton's static analysis and auto-fix capabilities.
  * DO NOT use this code in a production environment as-is.
  */
-public class ClaytonAntiPatterns { // Issue 1: Missing 'with sharing' or 'without sharing' keyword.
+public inherited sharing class ClaytonAntiPatterns { // Issue 1: Missing 'with sharing' or 'without sharing' keyword.
                                    // For simplicity, we omit it here to trigger a flag,
                                    // though 'with sharing' is often the default assumption for data operations.
 
