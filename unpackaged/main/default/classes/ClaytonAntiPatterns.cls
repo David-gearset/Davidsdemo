@@ -1,99 +1,64 @@
 /**
- * @description This class intentionally contains several anti-patterns
- * to demonstrate Clayton's static analysis and auto-fix capabilities.
+ * @description This class is designed to intentionally contain anti-patterns
+ * that are highly likely to trigger auto-fix suggestions in static analysis tools like Clayton.
  * DO NOT use this code in a production environment as-is.
  */
-public inherited sharing class ClaytonAntiPatterns { // Issue 1: Missing 'with sharing' or 'without sharing' keyword.
-                                   // For simplicity, we omit it here to trigger a flag,
-                                   // though 'with sharing' is often the default assumption for data operations.
-
-    // Issue 2: Hardcoded ID - This is generally a bad practice as IDs are environment specific.
-    private static final Id HARDCODED_PROFILE_ID = '00e000000000000AAA'; // Placeholder ID. Use a real one if you test with profiles.
+public class ClaytonAntiPatterns { // Issue 1: Missing 'with sharing' or 'without sharing' keyword.
+                                   // Expected Auto-fix: Add 'with sharing' (or 'without sharing' if contextually appropriate).
 
     /**
-     * @description Processes a list of Account records, demonstrating SOQL and DML in loops.
-     * @param accountNames A list of account names to search for.
+     * @description Processes a list of Account IDs, demonstrating SOQL and DML in loops,
+     * which are prime candidates for auto-bulkification.
+     * @param accountIds A list of Account IDs to process.
      */
-    public static void processAccountsWithIssues(List<String> accountNames) {
-        if (accountNames == null || accountNames.isEmpty()) {
+    public static void processAccountsForAutoFix(List<Id> accountIds) {
+        if (accountIds == null || accountIds.isEmpty()) {
             return;
         }
 
-        for (String accName : accountNames) {
-            // Issue 3: SOQL query inside a loop - Major performance anti-pattern.
-            // Clayton would suggest moving this query outside and using a Map.
-            List<Account> accounts = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name = :accName LIMIT 1];
+        for (Id accId : accountIds) {
+            // Issue 2: SOQL query inside a loop.
+            // Expected Auto-fix: Bulkify this query (e.g., query all at once using IN clause and store in a Map).
+            Account acc = [SELECT Id, Name, Description FROM Account WHERE Id = :accId LIMIT 1];
 
-            if (!accounts.isEmpty()) {
-                Account singleAccount = accounts[0];
-                singleAccount.AnnualRevenue = 1000000; // Hypothetical update
+            if (acc != null) {
+                acc.Description = 'Processed by AutoFix Test';
+                // Issue 3: DML operation inside a loop.
+                // Expected Auto-fix: Collect accounts into a list and perform DML outside the loop.
+                update acc;
 
-                // Issue 4: DML operation inside a loop - Another major performance anti-pattern.
-                // Clayton would suggest collecting records into a list and performing a single DML operation.
-                update singleAccount;
-
-                // Issue 5: System.debug inside a loop - Can cause performance issues, especially in large loops.
-                System.debug('Processed Account: ' + singleAccount.Name);
+                // Issue 4: System.debug inside a loop.
+                // Expected Auto-fix: Remove or aggregate debug statements outside the loop.
+                System.debug('Account ' + acc.Id + ' processed.');
             }
         }
     }
 
     /**
-     * @description Demonstrates an empty catch block and unnecessary variable.
+     * @description Demonstrates an empty catch block and an unused variable/parameter.
+     * @param inputString A string parameter.
      */
-    public static void demonstrateBadExceptionHandling() {
-        String unusedVariable = 'This variable is not used.'; // Issue 6: Unused variable.
+    public static void demonstrateSimpleFixes(String inputString) { // Issue 5: Unused parameter.
+                                                                    // Expected Auto-fix: Remove unused parameter.
+        String tempVariable = 'Some value'; // Issue 6: Unused local variable.
+                                             // Expected Auto-fix: Remove unused variable.
 
         try {
-            Integer result = 10 / 0; // This will cause a DML exception
-            System.debug('Result: ' + result);
+            Integer result = Integer.valueOf('abc'); // This will cause a System.TypeException
+            System.debug('Parsing result: ' + result);
         } catch (Exception e) {
-            // Issue 7: Empty catch block - Hides exceptions, making debugging difficult.
-            // Clayton would flag this, suggesting at least logging the exception.
+            // Issue 7: Empty catch block.
+            // Expected Auto-fix: Add logging for the exception (e.g., System.debug(e.getMessage());).
         }
     }
 
     /**
-     * @description An example of a method that could be called without bulkification.
-     * While the method itself might not have a direct anti-pattern for Clayton,
-     * how it's used elsewhere (e.g., in a trigger not calling a handler) could.
-     * This is more for conceptual demonstration.
-     * @param recordId The ID of the record to process.
+     * @description A method that could potentially be static if it doesn't use instance variables.
+     * Issue 8: Non-static method that could be static.
+     * Expected Auto-fix: Add 'static' keyword.
+     * @return A simple string.
      */
-    public static void processSingleRecord(Id recordId) {
-        // Issue 8: Consider this a simplified method often used non-bulkified.
-        // If this were in a trigger context and called for each record, it's an anti-pattern.
-        // For Clayton to flag this here, it would typically need more context like a trigger handler.
-        // However, the "Single Record" processing can often lead to un-bulkified DML/SOQL in triggers.
-        if (recordId != null) {
-            Account acc = [SELECT Id, Name FROM Account WHERE Id = :recordId LIMIT 1];
-            if (acc != null) {
-                acc.Name = acc.Name + ' - Processed';
-                update acc;
-            }
-        }
-    }
-
-    /**
-     * @description A method demonstrating a complex conditional which might indicate
-     * room for refactoring or simpler logic.
-     * @param value A string value.
-     * @return A string based on the input value.
-     */
-    public static String getComplexString(String value) {
-        if (value != null && value.length() > 5) {
-            if (value.startsWith('A') || value.contains('X')) {
-                return 'Complex A or X';
-            } else {
-                return 'Complex No A or X';
-            }
-        } else if (value != null && value.length() == 0) { // Fix: Changed value.isEmpty() to value.length() == 0
-            return 'Empty Value';
-        } else {
-            // Issue 9: This 'else' block could potentially lead to missed return paths
-            // or unhandled conditions in more complex scenarios. Not a direct Clayton auto-fix,
-            // but an indicator of complexity.
-            return 'Default';
-        }
+    public String getNonStaticString() {
+        return 'This method is not static.';
     }
 }
