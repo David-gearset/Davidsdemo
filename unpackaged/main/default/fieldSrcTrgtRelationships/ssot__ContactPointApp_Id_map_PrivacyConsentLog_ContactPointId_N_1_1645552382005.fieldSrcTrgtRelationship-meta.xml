@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__PrivacyConsentLog__dlm.ssot__rel_1697761160097_end__c</lookupFieldName>
+    <masterLabel>ContactPointApp_Id_map_PrivacyConsentLog_ContactPointId_N_1_1645552382005</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__PrivacyConsentLog__dlm.ssot__ContactPointId__c</sourceFieldName>
+    <targetFieldName>ssot__ContactPointApp__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

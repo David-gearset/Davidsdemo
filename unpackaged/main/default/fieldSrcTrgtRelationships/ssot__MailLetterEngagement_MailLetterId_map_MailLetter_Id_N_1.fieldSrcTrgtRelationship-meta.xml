@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__MailLetterEngagement__dlm.ssot__rel_1719819805021_end__c</lookupFieldName>
+    <masterLabel>MailLetterEngagement_MailLetterId_map_MailLetter_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__MailLetterEngagement__dlm.ssot__MailLetterId__c</sourceFieldName>
+    <targetFieldName>ssot__MailLetter__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

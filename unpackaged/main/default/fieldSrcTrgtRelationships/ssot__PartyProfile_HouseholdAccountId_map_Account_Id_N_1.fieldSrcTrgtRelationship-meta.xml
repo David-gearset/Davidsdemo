@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__PartyProfile__dlm.ssot__rel_1731658769704_end__c</lookupFieldName>
+    <masterLabel>PartyProfile_HouseholdAccountId_map_Account_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__PartyProfile__dlm.ssot__HouseholdAccountId__c</sourceFieldName>
+    <targetFieldName>ssot__Account__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

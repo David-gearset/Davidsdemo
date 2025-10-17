@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__ShoppingCartEngagement__dlm.ssot__rel_1697761171082_end__c</lookupFieldName>
+    <masterLabel>EmailPublication_Id_map_ShoppingCartEngagement_EngagementPublicationId_N_1_1645552382581</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__ShoppingCartEngagement__dlm.ssot__EngagementPublicationId__c</sourceFieldName>
+    <targetFieldName>ssot__EmailPublication__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

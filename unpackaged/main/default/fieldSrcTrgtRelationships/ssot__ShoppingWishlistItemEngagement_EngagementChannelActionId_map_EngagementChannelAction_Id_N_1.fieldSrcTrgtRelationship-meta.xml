@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__ShoppingWishlistItemEngagement__dlm.ssot__rel_1732260236670_end__c</lookupFieldName>
+    <masterLabel>ShoppingWishlistItemEngagement_EngagementChannelActionId_map_EngagementChannelAction_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__ShoppingWishlistItemEngagement__dlm.ssot__EngagementChannelActionId__c</sourceFieldName>
+    <targetFieldName>ssot__EngagementChannelAction__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

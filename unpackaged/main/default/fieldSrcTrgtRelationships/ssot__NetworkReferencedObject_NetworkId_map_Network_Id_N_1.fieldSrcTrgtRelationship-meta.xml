@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__NetworkReferencedObject__dlm.ssot__rel_1697761223519_end__c</lookupFieldName>
+    <masterLabel>NetworkReferencedObject_NetworkId_map_Network_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__NetworkReferencedObject__dlm.ssot__NetworkId__c</sourceFieldName>
+    <targetFieldName>ssot__Network__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__ClaimCoverage__dlm.ssot__rel_1723128261197_end__c</lookupFieldName>
+    <masterLabel>ClaimCoverage_ClaimItemId_map_ClaimItem_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__ClaimCoverage__dlm.ssot__ClaimItemId__c</sourceFieldName>
+    <targetFieldName>ssot__ClaimItem__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

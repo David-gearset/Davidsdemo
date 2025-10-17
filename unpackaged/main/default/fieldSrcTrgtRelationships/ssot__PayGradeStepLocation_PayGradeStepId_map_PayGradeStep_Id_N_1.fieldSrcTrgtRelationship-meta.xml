@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__PayGradeStepLocation__dlm.ssot__rel_1727366707966_end__c</lookupFieldName>
+    <masterLabel>PayGradeStepLocation_PayGradeStepId_map_PayGradeStep_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__PayGradeStepLocation__dlm.ssot__PayGradeStepId__c</sourceFieldName>
+    <targetFieldName>ssot__PayGradeStep__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

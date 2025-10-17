@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__EngagementAnalysisTextDirectFeedback__dlm.ssot__rel_1718546704058_end__c</lookupFieldName>
+    <masterLabel>EngagementAnalysisTextDirectFeedback_EngagementAnalysisTextId_map_EngagementAnalysisText_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__EngagementAnalysisTextDirectFeedback__dlm.ssot__EngagementAnalysisTextId__c</sourceFieldName>
+    <targetFieldName>ssot__EngagementAnalysisText__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

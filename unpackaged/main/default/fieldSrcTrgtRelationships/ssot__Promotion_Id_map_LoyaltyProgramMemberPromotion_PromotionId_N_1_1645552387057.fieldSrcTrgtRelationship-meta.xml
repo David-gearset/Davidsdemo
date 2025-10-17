@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__LoyaltyProgramMemberPromotion__dlm.ssot__rel_1697761196750_end__c</lookupFieldName>
+    <masterLabel>Promotion_Id_map_LoyaltyProgramMemberPromotion_PromotionId_N_1_1645552387057</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__LoyaltyProgramMemberPromotion__dlm.ssot__PromotionId__c</sourceFieldName>
+    <targetFieldName>ssot__Promotion__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__RgltyCodeRegClauseVer__dlm.ssot__rel_1731659307330_end__c</lookupFieldName>
+    <masterLabel>RgltyCodeRegClauseVer_RegulationClVerId_map_RegulationClauseVersion_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__RgltyCodeRegClauseVer__dlm.ssot__RegulationClVerId__c</sourceFieldName>
+    <targetFieldName>ssot__RegulationClauseVersion__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

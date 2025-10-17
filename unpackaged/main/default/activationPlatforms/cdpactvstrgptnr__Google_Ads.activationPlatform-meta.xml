@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ActivationPlatform xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <activationPlatformAdditionalMetadata>{
+  "hashMethod" : null,
+  "customerFileSources" : [ ],
+  "activationPlatformEventMetadata" : {
+    "supportedEventTypes" : [ ],
+    "standardEventDetails" : null,
+    "customEventDetails" : null
+  },
+  "mappingSchemas" : [ {
+    "name" : "PII",
+    "title" : "Customer Match",
+    "description" : "Leverage Hashed PII Match Keys",
+    "icon" : "utility:contact"
+  }, {
+    "name" : "ANON",
+    "title" : "Device ID Match",
+    "description" : "Leverage synced 1P Cookie IDs and Device IDs",
+    "icon" : "utility:desktop_and_phone"
+  } ],
+  "partnerSupportedIds" : [ ],
+  "outputProperties" : null
+}</activationPlatformAdditionalMetadata>
+    <activationPlatformConnectorType>OAUTH</activationPlatformConnectorType>
+    <dataConnector>cdpactvstrgptnr__Google_Ads1669683128100</dataConnector>
+    <description>Create activation targets using a connected Google Ads account.</description>
+    <enabled>false</enabled>
+    <includeSegmentNames>false</includeSegmentNames>
+    <masterLabel>Google Ads</masterLabel>
+    <outputFormat>JSON</outputFormat>
+    <outputGrouping>PER_ACCOUNT</outputGrouping>
+    <periodicRefreshFrequecy>REFRESH_30</periodicRefreshFrequecy>
+    <platformType>Advertising</platformType>
+    <refreshFrequency xsi:nil="true" />
+    <refreshMode>INCREMENTAL</refreshMode>
+</ActivationPlatform>

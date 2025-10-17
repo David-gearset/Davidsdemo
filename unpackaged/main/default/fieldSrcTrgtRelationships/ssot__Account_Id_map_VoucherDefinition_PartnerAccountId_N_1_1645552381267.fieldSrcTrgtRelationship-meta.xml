@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__VoucherDefinition__dlm.ssot__rel_1697761152468_end__c</lookupFieldName>
+    <masterLabel>Account_Id_map_VoucherDefinition_PartnerAccountId_N_1_1645552381267</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__VoucherDefinition__dlm.ssot__PartnerAccountId__c</sourceFieldName>
+    <targetFieldName>ssot__Account__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

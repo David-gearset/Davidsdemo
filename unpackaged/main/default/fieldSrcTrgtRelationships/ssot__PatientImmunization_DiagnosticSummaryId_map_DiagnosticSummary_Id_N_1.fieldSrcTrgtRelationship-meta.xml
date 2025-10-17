@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__PatientImmunization__dlm.ssot__rel_1716723539036_end__c</lookupFieldName>
+    <masterLabel>PatientImmunization_DiagnosticSummaryId_map_DiagnosticSummary_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__PatientImmunization__dlm.ssot__DiagnosticSummaryId__c</sourceFieldName>
+    <targetFieldName>ssot__DiagnosticSummary__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

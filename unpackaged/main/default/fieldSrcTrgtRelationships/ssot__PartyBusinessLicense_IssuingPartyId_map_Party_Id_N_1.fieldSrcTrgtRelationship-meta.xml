@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__PartyBusinessLicense__dlm.ssot__rel_1721371854715_end__c</lookupFieldName>
+    <masterLabel>PartyBusinessLicense_IssuingPartyId_map_Party_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__PartyBusinessLicense__dlm.ssot__IssuingPartyId__c</sourceFieldName>
+    <targetFieldName>ssot__Party__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

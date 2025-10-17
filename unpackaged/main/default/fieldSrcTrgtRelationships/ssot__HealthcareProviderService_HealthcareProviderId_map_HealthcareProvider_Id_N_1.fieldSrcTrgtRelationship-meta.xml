@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__HealthcareProviderService__dlm.ssot__rel_1742275564938_end__c</lookupFieldName>
+    <masterLabel>HealthcareProviderService_HealthcareProviderId_map_HealthcareProvider_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__HealthcareProviderService__dlm.ssot__HealthcareProviderId__c</sourceFieldName>
+    <targetFieldName>ssot__HealthcareProvider__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__WorkOrderItem__dlm.ssot__rel_1711101250335_end__c</lookupFieldName>
+    <masterLabel>WorkOrderItem_ServiceTerritoryId_map_ServiceTerritory_Id_N_1</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__WorkOrderItem__dlm.ssot__ServiceTerritoryId__c</sourceFieldName>
+    <targetFieldName>ssot__ServiceTerritory__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

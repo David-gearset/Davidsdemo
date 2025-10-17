@@ -1,0 +1,16 @@
+<apex:page >
+    <h1>Insecure Resource Loading Test</h1>
+    <p>This page attempts to load a script over an insecure HTTP connection. </p>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div id="test-output"></div>
+
+    <script>
+        if (typeof jQuery !== 'undefined') {
+            document.getElementById('test-output').innerHTML = '<h2>Success!</h2><p>jQuery was loaded successfully over HTTP. This confirms the page is vulnerable to insecure resource loading.</p>';
+        } else {
+            document.getElementById('test-output').innerHTML = '<h2>Failure!</h2><p>jQuery could not be loaded. This is expected in modern browsers and Salesforce environments with strict security policies.</p>';
+        }
+    </script>
+</apex:page>

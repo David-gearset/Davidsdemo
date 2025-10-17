@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <definitionCreationType>Standard</definitionCreationType>
+    <lookupFieldName>ssot__AuthorizationFormConsent__dlm.ssot__rel_1697761154252_end__c</lookupFieldName>
+    <masterLabel>AuthorizationFormText_Id_map_AuthorizationFormConsent_AuthorizationFormTextId_N_1_1645552387471</masterLabel>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>ssot__AuthorizationFormConsent__dlm.ssot__AuthorizationFormTextId__c</sourceFieldName>
+    <targetFieldName>ssot__AuthorizationFormText__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>
