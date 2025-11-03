@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParentId</fullName>
+    <description>Boat</description>
+    <inlineHelpText>Boatface</inlineHelpText>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Hello I am looking for this</errorMessage>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <value>12543567</value>
+        </filterItems>
+        <infoMessage>This not what I am looking for</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
