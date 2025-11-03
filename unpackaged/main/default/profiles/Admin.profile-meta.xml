@@ -947,4 +947,12 @@
         <apexClass>ClaytonAntiPatterns</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>CaseTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DynamicClassGenerator_TEST</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
 </Profile>
