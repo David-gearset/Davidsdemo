@@ -944,6 +944,14 @@
         <name>WorkCalibrationUser</name>
     </userPermissions>
     <classAccesses>
+        <apexClass>NumberUtilityTestfail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NumberUtilityfail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TemperatureConverter2</apexClass>
         <enabled>true</enabled>
     </classAccesses>
