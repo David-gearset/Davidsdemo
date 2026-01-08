@@ -958,4 +958,12 @@
         <apexClass>Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>NumberUtilityTestfail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NumberUtilityfail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
 </Profile>
