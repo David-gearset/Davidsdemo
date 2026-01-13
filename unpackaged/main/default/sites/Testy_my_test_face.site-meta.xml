@@ -23,7 +23,7 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>david.martin928@agentforce.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>david.martin928@agentforce.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>	gareth.hefferon+new-staging@gearset.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>gareth.hefferon+new-staging@gearset.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
 </CustomSite>
