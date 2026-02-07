@@ -944,6 +944,18 @@
         <name>WorkCalibrationUser</name>
     </userPermissions>
     <classAccesses>
+        <apexClass>CommunitiesSelfRegController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLanding</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLogin</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <classAccesses>
         <apexClass>NumberUtilityTestfail</apexClass>
         <enabled>true</enabled>
     </classAccesses>
