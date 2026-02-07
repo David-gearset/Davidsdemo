@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
     <userLicense>Salesforce</userLicense>
     <fieldPermissions>
@@ -940,6 +939,14 @@
         <name>WorkCalibrationUser</name>
     </userPermissions>
     <classAccesses>
+        <apexClass>CaseTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DynamicClassGenerator_TEST</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LightningLoginFormController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -957,6 +964,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NumberUtilityTestfail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NumberUtilityfail</apexClass>
         <enabled>true</enabled>
     </classAccesses>
 </Profile>
